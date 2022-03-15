@@ -1,9 +1,9 @@
 Versões
 
 ```
- Rails **v6.1.5**
- Ruby **v2.7.2**
- Node **v14.15.0**
+ Rails v6.1.5
+ Ruby v2.7.2
+ Node v14.15.0
 
 ```
 Instalação
