@@ -1,0 +1,38 @@
+en:
+  activerecord:
+    models:
+      active_storage/attachment: Active storage/attachment  #g
+      active_storage/blob: Active storage/blob  #g
+      active_storage/variant_record: Active storage/variant record  #g
+      property: Property  #g
+
+    attributes:
+      active_storage/attachment:
+        blob: :activerecord.models.blob  #g
+        name: Name  #g
+        record: :activerecord.models.record  #g
+        record_type: Record type  #g
+
+      active_storage/blob:
+        attachments: Attachments  #g
+        byte_size: Byte size  #g
+        checksum: Checksum  #g
+        content_type: Content type  #g
+        filename: Filename  #g
+        key: Key  #g
+        metadata: Metadata  #g
+        preview_image_attachment: :activerecord.models.preview_image_attachment  #g
+        preview_image_blob: :activerecord.models.preview_image_blob  #g
+        service_name: Service name  #g
+        variant_records: Variant records  #g
+
+      active_storage/variant_record:
+        blob: :activerecord.models.blob  #g
+        image_attachment: :activerecord.models.image_attachment  #g
+        image_blob: :activerecord.models.image_blob  #g
+        variation_digest: Variation digest  #g
+
+      property:
+        images_attachments: Images attachments  #g
+        images_blobs: Images blobs  #g
+        name: Name  #g

@@ -1,0 +1,38 @@
+pt-BR:
+  activerecord:
+    models:
+      active_storage/attachment: Armazenamento/anexo ativo  #g
+      active_storage/blob: Armazenamento ativo/blob  #g
+      active_storage/variant_record: Armazenamento ativo/registro de variante  #g
+      property: Propriedade  #g
+
+    attributes:
+      active_storage/attachment:
+        blob: :activerecord.models.blob  #g
+        name: Nome  #g
+        record: :activerecord.models.record  #g
+        record_type: Tipo de registro  #g
+
+      active_storage/blob:
+        attachments: Anexos  #g
+        byte_size: Tamanho do byte  #g
+        checksum: Soma de verificação  #g
+        content_type: Tipo de conteúdo  #g
+        filename: Nome do arquivo  #g
+        key: Chave  #g
+        metadata: Metadados  #g
+        preview_image_attachment: :activerecord.models.preview_image_attachment  #g
+        preview_image_blob: :activerecord.models.preview_image_blob  #g
+        service_name: Nome do Serviço  #g
+        variant_records: Registros de variantes  #g
+
+      active_storage/variant_record:
+        blob: :activerecord.models.blob  #g
+        image_attachment: :activerecord.models.image_attachment  #g
+        image_blob: :activerecord.models.image_blob  #g
+        variation_digest: Resumo da variação  #g
+
+      property:
+        images_attachments: Imagens anexas  #g
+        images_blobs: Blobs de imagens  #g
+        name: Nome  #g

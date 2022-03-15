@@ -1,0 +1,28 @@
+<div class="container mt-5">
+  <h3 style="margin: 0;display: inline-block;">Propriedades</h3>
+  <a href="/" class="btn btn-dark mx-3" style="float: right;">Voltar</a>
+  <%= link_to "Nova Propriedade", new_property_path, class: "btn btn-primary", style: "float: right;" %>
+
+
+  <div class="row mt-5">
+    <% if @records.length == 0 %>
+      <span>Nenhuma propriedade cadastrada até o momento...</span>
+    <% end %>
+    <% @records.each do |property| %>
+      <div class="col-4 mb-5">
+        <%= link_to edit_property_path(property) do %>
+          <div class="card" style="width: 18rem;">
+            <% if property.images[2].present? %>
+              <%= image_tag property.images[2], class: "card-img-top" %>
+            <% else %>
+              <%= image_tag "no_image.png", class: "card-img-top" %>
+            <% end %>
+            <div class="card-body">
+              <h5 class="card-title"><%= property.name %></h5>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
